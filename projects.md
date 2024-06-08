@@ -42,86 +42,86 @@ Since we have the set $\mathbb{N}$ for both $x$ and $y$. This means that we have
 # Mini Project #5 #
 ## Part 1: ##
 **Prove using mathematical induction that:** <br />
-$$ 1^2 + 2^2 + ... + n^2 = \frac{n(n + 1)(2n + 1)}{6}$$
+$$1^2 + 2^2 + ... + n^2 = \frac{n(n + 1)(2n + 1)}{6}$$
 **Base Case:** For the base case $n = 1$ we get: <br />
-$$ 1^2 = \frac{1(1 + 1)(2(1)+1)}{6},$$
-$$ 1 = \frac{(2)(3)}{6},$$
-$$ 1 = \frac{6}{6} = 1,$$
+$$1^2 = \frac{1(1 + 1)(2(1)+1)}{6},$$
+$$1 = \frac{(2)(3)}{6},$$
+$$1 = \frac{6}{6} = 1,$$
 Thus, we can see that the base case $n = 1$ is true. <br /> 
 **Inductive Step:** <br />
 Since the statement is true for the base case $n = 1$, we can assume that the statement is also true for $k \geq 1$. This will then give us the inductive hypothesis: <br />
-$$ 1^2 + 2^2 + ... + k^2 = \frac{k(k + 1)(2k + 1)}{6}$$
+$$1^2 + 2^2 + ... + k^2 = \frac{k(k + 1)(2k + 1)}{6}$$
 Since we assumed that the statement holds for $k \geq 1$ we have to prove that it also holds for $k + 1$. So we need to show that:
-$$ 1^2 + 2^2 + ... + k^2 + (k + 1)^2 = \frac{(k+1)((k+1) + 1)(2(k+1) + 1)}{6} (eq.1)$$
+$$1^2 + 2^2 + ... + k^2 + (k + 1)^2 = \frac{(k+1)((k+1) + 1)(2(k+1) + 1)}{6} (eq.1)$$
 We want to prove that both sides of this equation are equal. By the inductive hypothesis we know that: 
-$$ 1^2 + 2^2+...+ k^2 = \frac{k(k+1)(2k+1)}{6}$$
+$$1^2 + 2^2+...+ k^2 = \frac{k(k+1)(2k+1)}{6}$$
 So we have that the left side of the equation is:
 $$1^2 + 2^2 + ... + k^2 + (k + 1)^2 = \frac{k(k+1)(2k+1)}{6} + (k+1)^2$$
 Then we can combine the terms in order to get:
-$$ \frac{k(k+1)(2k+1)}{6} + \frac{6(k+1)^2}{6},$$
-$$ = \frac{k(k+1)(2k+1) + 6(k+1)^2}{6}$$
+$$\frac{k(k+1)(2k+1)}{6} + \frac{6(k+1)^2}{6},$$
+$$= \frac{k(k+1)(2k+1) + 6(k+1)^2}{6}$$
 Then we can factor out $(k+1)$ in order to obtain:
-$$ =\frac{(k+1)[k(2k+1) +6(k+1)]}{6}$$
+$$=\frac{(k+1)[k(2k+1) +6(k+1)]}{6}$$
 Then we can combine more like terms and get:
-$$ = \frac{(k+1)[2k^2 + k + 6k + 1]}{6},$$
-$$ = \frac{(k+1)(2k^2 + 7k + 1)}{6}$$
+$$= \frac{(k+1)[2k^2 + k + 6k + 1]}{6},$$
+$$= \frac{(k+1)(2k^2 + 7k + 1)}{6}$$
 We can see that,
-$$ 2k^2 + 7k + 1 = (2k + 3)(k + 2),$$
+$$2k^2 + 7k + 1 = (2k + 3)(k + 2),$$
 And thus, we get the fraction:
-$$ \frac{(k+1)(2k+3)(k+2)}{6}$$
+$$\frac{(k+1)(2k+3)(k+2)}{6}$$
 After factoring we also see that:
-$$ 2k + 3 = 2(k+1) + 1,$$
+$$2k + 3 = 2(k+1) + 1,$$
 and,
-$$ k + 2 = (k + 1) + 1,$$
+$$k + 2 = (k + 1) + 1,$$
 Then we can plug these into the fraction and get:
-$$ =\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$$
+$$=\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$$
 
 Now we have proved that the left handside of (eq. 1) is equal to the right handside and therefore, by mathematical induction
-$$ 1^2 + 2^2 + ... +n^2 = \frac{n(n+1)(2n+1)}{6}$$
+$$1^2 + 2^2 + ... +n^2 = \frac{n(n+1)(2n+1)}{6}$$
 holds true. Thus, concluding the proof.
 
 ## Part 2: ##
 **Expression:**
-$$ (n+1)^4 - n^4 = 4n^3 + 6n^2 + 4n + 1$$
+$$(n+1)^4 - n^4 = 4n^3 + 6n^2 + 4n + 1$$
 For n = 0:
 $$(0+1)^4 - 0^4 = 4(0)^3 + 6(0)^2 + 4(0) + 1$$
-$$ = 1^4 - 0 = 0 + 0 + 0 +1$$
-$$ = 1 = 1$$
+$$= 1^4 - 0 = 0 + 0 + 0 +1$$
+$$= 1 = 1$$
 For n = 1:
 $$(1+1)^4 - 1^4 = 4(1)^3 + 6(1)^2 + 4(1) + 1$$
-$$ = 2^4 - 1^4 = 4^3 + 6^2 + 4 + 1$$
-$$ = 16 - 1 = 4 + 6 + 4 + 1$$
-$$ = 15 = 15$$
+$$= 2^4 - 1^4 = 4^3 + 6^2 + 4 + 1$$
+$$= 16 - 1 = 4 + 6 + 4 + 1$$
+$$= 15 = 15$$
 For n = 2:
 $$(2+1)^4 - 2^4 = 4(2)^3 + 6(2)^2 + 4(2) + 1$$
-$$ = 3^4 - 2^4 = 32 + 24 + 8 + 1$$
-$$ = 81 - 16 = 32 + 24 + 8 + 1$$
-$$ = 65 = 65$$
+$$= 3^4 - 2^4 = 32 + 24 + 8 + 1$$
+$$= 81 - 16 = 32 + 24 + 8 + 1$$
+$$= 65 = 65$$
 For n = 3:
 $$(3+1)^4 - 3^4 = 4(3)^3 + 6(3)^2 + 4(3) + 1$$
-$$ = 4^4 - 81 = 4(27) + 54 + 12 + 1$$
-$$ = 256 - 81 = 108 +54 + 12 + 1$$
-$$ = 175 = 175$$
+$$= 4^4 - 81 = 4(27) + 54 + 12 + 1$$
+$$= 256 - 81 = 108 +54 + 12 + 1$$
+$$= 175 = 175$$
 For n = 4:
 $$(4+1)^4 - 4^4 = 4(4)^3 + 6(4)^2 + 4(4) + 1$$
-$$ = 5^4 - 256 = 4(64) + 16(6) + 16 + 1$$
-$$ = 625 - 256 = 256 + 96 + 17$$
-$$ = 369 = 369$$
-When we add them all up we should get: $$ 1 + 15 + 65 + 175 + 369 = 625$$
+$$= 5^4 - 256 = 4(64) + 16(6) + 16 + 1$$
+$$= 625 - 256 = 256 + 96 + 17$$
+$$= 369 = 369$$
+When we add them all up we should get: $$1 + 15 + 65 + 175 + 369 = 625$$
 
 Now for adding up the equations we get the following on the left handside:
-$$ (1^4 - 0^4) + (2^4 - 1^4) + (3^4 - 2^4) + (4^4 - 3^4) + (5^4 - 4^4)$$
+$$(1^4 - 0^4) + (2^4 - 1^4) + (3^4 - 2^4) + (4^4 - 3^4) + (5^4 - 4^4)$$
 We can see that a lot of the terms cancel out and we are left with:
-$$ 5^4 - 0^4 = 5^4 = 625$$
+$$5^4 - 0^4 = 5^4 = 625$$
 When we add the equations we will get the following on the right handside:
 $$(4(0)^3 + 6(0)^2 + 4(0) + 1) + (4(1)^3 + 6(1)^2 + 4(1) + 1) + (4(2)^3 + 6(2)^2 + 4(2) + 1) + (4(3)^3 + 6(3)^2 + 4(3) + 1) + (4(4)^3 + 6(4)^2 + 4(4) + 1)$$
-$$ = 4(0^3 + 1^3 + 2^3 + 3^3 +4^3) + 6(0^2 + 1^2 + 2^2 + 3^2 + 4^2) + 4(0 + 1 + 2 + 3 + 4)+ 1(5)$$
+$$= 4(0^3 + 1^3 + 2^3 + 3^3 +4^3) + 6(0^2 + 1^2 + 2^2 + 3^2 + 4^2) + 4(0 + 1 + 2 + 3 + 4)+ 1(5)$$
 We can see that the values within the first set of parantheses follow the sum of cubes which is:
-$$ 1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n+1)^2}{4}$$
+$$1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n+1)^2}{4}$$
 Since the summation goes up to $n = 4$ we see that the values within the parantheses sum up to:
 $$\frac{4^2(4+1)^2}{4} = 100$$
 It can also be seen that the second set of parantheses has the values that follow the sum of squares which is:
-$$ 1^2 + 2^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}$$
+$$1^2 + 2^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}$$
 Since the summation goes up to $n = 4$ the values in the second set of parantheses sum up to:
 $$\frac{4(4+1)(2(4)+1)}{6} = 30$$
 Similarly, the third set of parentheses is just the sum of the natural numbers which is:
@@ -129,14 +129,14 @@ $$1 + 2 +\cdots+ n = \frac{n(n+1)}{2}$$
 Since the summation goes up to $n = 4$ we have:
 $$\frac{4(4+1)}{2} = 10$$
 Thus, we end up with the equation:
-$$ 4(100) + 6(30) + 4(10) + 5 = 625$$
+$$4(100) + 6(30) + 4(10) + 5 = 625$$
 
 ## Part 3: ##
 From **Part 2** we can see that when we sum up the equations from $n = 0$ to  $n$ times it follows the pattern of:
 $$1^4 - 0^4 + 2^4 - 1^4 + \cdots + n^4 - (n-1)^4 = 4(0^3 + 1^3 + 2^3 + \cdots + (n-1)^3) + 6(0^2 + 1^2 + \cdots+ (n-1)^2) + 4(0 + 1 +\cdots+(n-1)) + n*1$$
 Also from **Part 2** we see that this equation equals $n^4 - 0^4$ on the left handside.
 Similarly to **Part 2**, the right handside of the equation has the sum of powers contained within the parantheses. Thus, we will have the following when plugging in $n-1$ into the respective equations of the sum of powers that we used in with the respective values in the parantheses in **part 2**.
-$$ \frac{(n-1)^2(n-1+1)^2}{4} = \frac{(n-1)^2(n)^2}{4}$$
+$$\frac{(n-1)^2(n-1+1)^2}{4} = \frac{(n-1)^2(n)^2}{4}$$
 However, since we are summing to $n$ we want to add $1$ to $n-1$ so it becomes just $n$. This will then give us:
 $$\frac{(n)^2(n+1)^2}{4}$$
 This is the derivation of equation (5.3) from the project write-up.
