@@ -147,3 +147,6 @@ This is the derivation of equation (5.3) from the project write-up.
 # Mini Project #6 ##
 ## GRAPH 1: ##
 ![first graph](Graph1.png)
+
+<br />
+A lot of the directed edges are drawn from one set to another because of the rule of caridnality for injectivity. If a set has $\|A\| \leq \|B\|$ then there was a directed edge draw from A to B.
